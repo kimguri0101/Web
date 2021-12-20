@@ -1,0 +1,406 @@
+@charset "UTF-8"
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	background-image: url(https://i.postimg.cc/85HZfMHh/unsplash-m-HRf-Lhg-ABo1.png);
+	height: 800px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+header nav {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: rgba(255, 255, 255, 0.5);
+	/*position: fixed;*/
+}
+
+header nav h1 {
+	font: bold 42px 'Roboto';
+}
+
+header nav h1 a{
+	color: #1C5BEB;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header nav > ul > li {
+	list-style: none;
+	padding: 0 4px;
+	margin: 0 38px;
+	font: bold 16px 'Noto sans KR';
+	position:  relative;
+}
+
+header nav > ul > li > a {
+	color: #0c0c0c;
+}
+
+header nav > ul > li > ul {
+	width: 200px;
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav > ul > li > ul > li {
+	list-style: none;
+	padding: 0 10px;
+	font: 400 14px 'Noto sans KR';
+	line-height: 50px;
+}
+
+header nav > ul > li > ul > li > a {
+	color: #fff;
+}
+
+header nav > ul > li:hover > ul {
+	display: block;
+}
+
+header nav > ul > li > ul > li:hover {
+	background-color: rgba(255, 128, 61, 0.5);
+}
+
+
+
+header .world {
+	color: #fff;
+	font: bold 46px 'Noto sans KR';
+	text-align: right;
+	position: absolute;
+	bottom: 248px;
+	right: 360px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.goal_edu {
+	margin: 220px auto;
+	width: 1200px;
+	height: 436px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.goal_edu .goal_text {
+	width: 383px;
+	height: 280px;
+}
+
+.goal_edu .goal_text h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font: bold 38px 'Noto sans KR';
+}
+
+.goal_edu .goal_text p {
+	font: 400 18px 'Noto sans KR';
+	margin: 0;
+	text-align: justify;
+}
+
+.goal_edu .totalcard {
+	width: 714px;
+	height: 436px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.goal_edu .card {
+	height: 436px;
+	width: 330px;
+	overflow: hidden;
+	box-shadow: 4px 4px 20px rgba(101, 101, 101, 0.25);
+	border-radius: 8px;
+}
+
+.goal_edu .card .cardimg {
+	height: 234px;
+	object-fit: cover;
+}
+
+.goal_edu .card .cardtext h4 {
+	font: bold 30px 'Noto sans KR';
+	margin: 36px auto 16px 24px;
+}
+
+.goal_edu .card .cardtext p {
+	width: 282px;
+	font: 400 14px 'Noto sans KR';
+	line-height: 24px;
+	margin: 0 auto 59px auto;
+	text-align: justify;
+}
+
+
+
+.visi {
+	margin: 0 auto;
+	width: 1199px;
+	height: 540px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.visi .visionimg {
+	width: 658px;
+	height: 540px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.visi .visiontext {
+	width: 486px;
+	height: 315px;
+}
+
+.visi .visiontext h4 {
+	font: bold 30px 'Noto sans KR';
+	margin: 0;
+}
+
+.visi .visiontext p {
+	font: 400 18px 'Noto sans KR';
+	margin: 0;
+}
+
+.visi .visiontext .text1 {
+	margin-top: 20px;
+	margin-bottom: 42px;
+	text-align: justify;
+}
+
+
+#professor {
+	margin: 220px auto;
+	width: 1200px;
+	height: 493px;
+}
+
+#professor h4 {
+	font: bold 30px 'Noto sans KR';
+	margin: 0;
+	padding-bottom: 34px;
+}
+
+
+#professor .slide {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#professor .threeprocard {
+	height: 403px;
+	width: 1044px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+
+#professor .procard {
+	width: 204px;
+	height: 382px;
+}
+
+#professor .procard .proimg {
+	width: 204px;
+	height: 204px;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+}
+
+#professor .procard .proimg img {
+	width: 204px;
+	height: 204px;
+	object-fit: cover;
+}
+
+
+#professor .procard .proimg .interviewb:hover {
+	opacity: 1;
+}
+
+#professor .procard .interviewb {
+	width: 204px;
+	height: 204px;
+	background-color: rgba(85, 85, 85, 0.75);
+	position: absolute;
+	left: 50%;
+	right: 0;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 5;
+  	opacity: 0;
+}
+
+#professor .procard .interview {
+	height: 36px;
+	width: 112px;
+	border-radius: 10px;
+	border: 1px solid #FF803D;
+	color: #FF803D;
+	font: 700 12px 'Noto sans KR';
+	text-align: center;
+	margin: 84px auto;
+}
+
+#professor .procard p {
+	margin: 8px auto 11px auto;
+}
+
+#professor .procard .position {
+	font: 400 20px 'Noto sans KR';
+	margin: 16px auto 1px auto;
+	color: #797979;
+	text-align: center;
+}
+
+#professor .procard .name {
+	font: bold 24px 'Noto sans KR';
+	margin: 0 auto;
+	text-align: center;
+}
+
+#professor .procard .sub {
+	font: 400 12px 'Noto sans KR';
+	line-height: 17.38px;
+	margin: 16px auto 0 auto;
+	text-align: center;
+}
+
+
+
+
+footer {
+	width: 100%;
+	height: 160px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+footer .foot {
+	margin: 47px auto;
+	height: 66px;
+	width: 794px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .foot h2 {
+	margin: 0;
+	padding: 0;
+	color: #FF803D;
+	font-size: 42px;
+}
+
+footer .footerpa {
+	height: 66px;
+}
+
+footer .footerb {
+	margin: 0 0 12px 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+footer .footers {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 17.38px;
+}
+
+
+
+
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
