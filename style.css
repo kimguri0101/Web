@@ -3,7 +3,7 @@
 	padding: 0;
 	font-family: 'Noto Sans KR', sans-serif;
 	box-sizing: border-box;
-    color: #0C0C0C;
+	color: #0C0C0C;
 
 }
 
@@ -34,6 +34,9 @@ header nav {
 	align-items: center;
 	justify-content: space-between;
 	background-color: rgba(255, 255, 255, 0.5);
+	
+
+	
 }
 
 header nav h1 {
@@ -104,123 +107,751 @@ header nav > ul > li > ul > li:hover {
 }
 
 
-/*-----------------------------------------------------------------------*/
+/*-----제목-----*/
+.roadmap.title1{
+	font-weight: bold;
+	font-size: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 88px;
+}
+.roadmap.title1 img{
+	width: 46px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+}
 
-.container{
-	width: 900px;
-	margin-right: auto;
+/*-----로드맵 말풍선-----*/
+.container1{
+	width: ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 70px;
 	margin-left: auto;
-	margin-bottom: 100px;
-}
-.row{
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 150px;
+	margin-right: auto;
+	margin-bottom: 20px;
+
+	width: 970px;
+	height: 502px;
+	/*background-color: gray;*/
+	position: relative;
 }
 
-.col{
-  
-  display: flex;
-  flex-direction: column;
+.container1 {
+    width: 970px;
 }
-.text{
+
+.container1 a{
+	color: #0C0C0C;
+}
+.talk{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 18px 18px;
+    position: relative;
+    vertical-align: top;
+
+    
+    font-weight: 400;
+}
+
+.talk::before {
+    background-color: #Fff;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.one {
+    float: left; 
+    font-size: 20px;
+    margin: -270px -10px 5px 20px;         
+}
+
+.one::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+
+
+.innertext.qq{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 30%;
+	
+	color:white;
+    left: 34%;
+}
+.innertext.ww{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 26%;
+	
+	color:white;
+    left: 34%;
+}
+.innertext.ee{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 40%;
+	
+	color:white;
+    left: 34%;
+}
+.innertext.rr{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 30%;
+	
+	color:white;
+    left: 34%;
+}
+.innertext.tt{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 40%;
+	
+	color:white;
+    left: 24%;
+}
+.innertext.yy{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 34%;
+	
+	color:white;
+    left: 34%;
+}
+.innertext.uu{
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	top: 30%;
+	
+	color:white;
+    left: 40%;
+}
+.talking:hover .talk{
+	/*transform: scale(1.1) ease 0s;*/
+	      transition: 0.3s ease 0s;
+          background-color: black ;
+          opacity: 0.3;
+} 
+.talking:hover .talk::before{
+	/*transform: scale(1.1) ease 0s;*/
+	      transition: 0.3s ease 0s;
+          background-color: black ;
+          opacity: 0.5;
+} 
+.talking:hover .innertext {
+	      transition: 0.3s ease 0s;
+          opacity: 1
+}
+
+
+
+
+.two {
+    float: right;  
+    font-size: 20px;  
+    margin: -260px 20px 5px 45px;         
+}
+
+.two::before {
+
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+
+.three{
+    position: absolute;  
+    font-size: 16px;
+   top: 100px;   
+   left: 240px;  
+}
+.three::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+.four {
+    position: absolute; 
+    font-size: 14px;  
+    bottom: 370px;
+    right: 200px;
+         
+}
+
+.four::before {
+
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+.five {
+    position: absolute; 
+    font-size: 12px;  
+    bottom: 260px;
+    right: 250px;
+         
+}
+
+.five::before {
+
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+.six {
+    position: absolute; 
+    font-size: 12px;  
+    bottom: 170px;
+    right: 230px;
+         
+}
+
+.six::before {
+
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+.seven{
+    position: absolute;  
+    font-size: 14px;
+    bottom:170px;
+    left: 160px;       
+}
+.seven::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+
+
+
+/*-----디자인툴-----*/
+.tool{
+	margin-bottom: 220px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.roadmap.title2{
+	font-weight: bold;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 14px;
+}
+
+
+.tool .swiper {
+        width: 970px;
+        height: 100%;
+
+        margin: 20px 0 20px 0;
+        display: flex;
+        align-items: center;
+      }
+
+.tool .swiper-slide {
+      	
+        text-align: center;        
+       /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .tool .swiper-slide img {
+
+        display: block;
+        height: 70px;
+        width: 70px;
+        background-color: grays;
+        object-fit: cover;
+
+      }
+.tool .swiper-button-prev:after{
+	display: flex;
+	opacity: 0;
+}
+.tool .swiper-button-next:after{
+	display: flex;
+	margin-left: -25px;
+	opacity: 0;
+}
+
+
+/*말풍선*/
+.chat-aaa {
+    position: absolute;
+        left: 180px;
+        bottom: 12px;   
+}
+.chat-bbb {
+    position: absolute;
+        left: 180px;
+        bottom: 12px;   
+}
+.chat-ccc {
+    position: absolute;
+        left: 194px;
+        bottom: 12px;   
+}
+
+.bubble{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #B2B2B2;
+    display: inline-block;
+    padding: 1px 0px;
+    position: relative;
+    vertical-align: top;
+}
+
+.bubble::before {
+    background-color: #Fff;
+    content: "\00a0";
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  12px;
+}
+
+.me {
+    float: left;   
+    margin: 5px 45px 5px 20px;         
+}
+
+.me::before {
+    box-shadow: -2px 4px 3px 0 rgba( 178, 178, 178, .4 );
+    left: -4px;           
+}
+ 
+    .bubble span {
+        display: flex;
+        padding: 6px 18px;
+        font-size: 12px;
+        font-weight: 100;
+       
+    }
+ 
+
+ /*말풍선*/   
+
+
+ /*-----디자인영상-----*/
+.YouTube{
+	display: flex;
+	justify-content: center;
+}
+.container3{
+	display: flex;
+	align-items: center;
+		
+}
+.section{
+	margin-bottom: 100px;
+	position: relative;
+}
+.title4{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	justify-content: space-between;
+    margin-bottom: 14px;
+	
+	width: 1200px;
+}
+
+.roadmap.title3{
+	display: flex;
+	font-weight: bold;
+    font-size: 32px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+   
+}
+
+.container3 .play{
+	display: flex;
+	justify-content: center;
+	height: 10px;
+}
+.container3.section{
 	display: flex;
 	flex-direction: column;
-	margin-right: 120px;
 }
-h1{
-  font-size: 28px;
+.container3 .swiper-wrapper{
+
+}
+.container3 .swiper-button-prev{
+	position: absolute;
+	left: 1136px;
+    }
+.container3.swiper-button-next{
+	position: absolute;
+	right: 6px;
+}
+.container3 .swiper-button-prev::after, .container3.swiper-button-next::after{
+    font-size: 16px!important;
+    opacity: 0;
+   color:red;
+   /*text-shadow: -2px 0 blue, 0 2px blue, 2px 0 blue, 0 -2px blue;*/
+   font-weight: 400!important;
+}
+.fas{
+	color: #555555;
+	font-size: 18px;
+}
+  .container3.swiper {
+        width: 1218px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+   
+      .container3 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: white;
+        height: 390px;
+        
+        position: relative;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+
+      @media (max-width: 760px) {
+        .container3.swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .container3.swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+        .tutorial{
+      	position: absolute;
+      	top: 0;
+      	width: 384px;
+      	height: 216px;
+      	background-color: gray;
+      	width: 384px;
+      }
+      .tutorial img{
+      	width: 100%;
+      	height: 100%;
+      }
+      .lable img{
+      	width: 100px;
+      	height: 100px;
+      	position: absolute;
+      	left: 150px;
+      	top: 54px;
+      }
+      .lable{
+      	width: 130px;
+      	height: 50px;
+      	background-color: #4b74f4;
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      }
+      .level{
+      	font-size: 14px;
+      	font-weight: bold;
+      	color: white;
+      }
+      .videoinfo{
+      	z-index: 10;
+        display: flex;
+        width: 384px;
+        flex-direction: column;
+        position: absolute;
+        bottom: 68px;
+        text-align: left;
+      }
+      .teacher{
+      	
+      	font-size: 16px;
+      	margin: 8px 0;
+      }
+      h1{
+         font-size: 22px;
+      }
+
+      /*cccccccccc*/
+}
+}
 }
 
-p{
-  font-size: 14px;
-  margin-top: 6px;
+
+/*--------강의후기----------*/
+.container4 .review{
+	width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.last{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.reviewtitle{
+	display: flex;
+}
+.title4{
+	
+	font-weight: bold;
+    font-size: 30px;
+}
+.reviewbox{
+	display: flex;
+	width: 700px;
+	height: 320px;
+	/*background-color: red;*/
+}
+.container4 .review .swiper-slidep .nn{
+	position: absolute;
+	top: 200px;
 }
 
-button{
-  color: #fff;
-  width: 100px;
-  height: 35px;
+.container4.swiper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+.container4 .swiper .mySwiper{
+	display: flex;
+	flex-direction: row;
+}
+      .container4 .swiper-slide {
+      	position: relative;
+      	bottom: 40px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        flex-direction: column;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .container4.swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+.container4 .swiper-button-next::after, .container4 .swiper-button-prev::after{
+	opacity: 1;
+	color: red;
+}
+.container4 .swiper-button-prev::after, .container4.swiper-button-next::after{
+   font-size: 20px!important;
+   opacity: 0;
+   color:red;
+   font-weight: 400!important;
+}
+.container4 .fas{
+	position: absolute;
+	color: #c2c2c2;
+	font-size: 30px;
+	top: -50px;
+}
+/*------------강의후기 내용------------------*/
+.message{
+	position: absolute;
+	top: -50px;
+  background: #fff;
+/*  background: -moz-linear-gradient(top, #dedede 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #dedede 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #dedede 0%, #ffffff 100%);;
+  background: -o-linear-gradient(top, #dedede 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #dedede 0%, #ffffff 100%);
+  background: linear-gradient(top, #dedede 0%, #ffffff 100%);*/
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px 30px ;
+  text-align: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 2px, rgba(0, 0, 0, 0.1) -1px -1px 2px 1px ;
+  border-radius: 10px;
+}
+
+.message:after {
+  content: "";
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 2px ;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: -4px;
+  left: 20px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #FFF #FFF transparent;
+}
+.message .title{
+	display: flex;
+  font-size: 16px;
+  font-weight: bold;
+}
+.message .content{
   font-size: 12px;
-  font-weight: 700;
-  background: #FF6F24;
-  border: 0;
-  border-radius: 8px;
-  outline: none;
-  margin-top: 30px;
-  cursor: pointer;
-}
-.one{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: row;
-}
-.two{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-direction: row;
-}
-.card{
-  width: 190px;
-  height: 220px;
-  display: inline-block;
-  border-radius: 8px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  cursor: pointer;
- margin: 6px;
-  text-align: center;
-  box-shadow: 4px 4px 20px 0px rgba(101, 101, 101, 0.25);
-}
-
-.card h5{
-  margin-top: 15px;
-}
-h5{
-	font-size: 14px;
-}
-.card p{
-  font-size: 10px;
-  font-weight: 400;
-  margin-top: 0px;
-  font-size: 4px;
-  opacity: 0.7;
-}
-
-i{
-  text-align: center;
-  margin-top: 28px;
-  font-size: 54px;
-  color: #4B74F4;
-}
-.info{
-	margin-top: 28px;
-}
-.thing i{
-	margin-top: 20px;
-
-}
-.thing .info{
-	margin-top: 20px;
-}
-.thing p{
+  display: flex;
+  font-weight: 100;
+  margin: 4px 0 16px 0;
+  text-align: left;
+}  
+.message .star.mm img{
+	width: 70px;
+	height: 10px;
 	margin-bottom: 10px;
+
 }
-.icon{
+.message .star.nn img{
 	width: 60px;
+	height: 12px;
+	margin-bottom: 10px;
+
+}
+
+    /*------사람 정보----*/
+.person{
+	display: flex;
+	align-items: center;
+	text-align: left;
+	flex-direction: row;
+	position: absolute;
+
+	top: 190px;
+	left: 100px;
+}
+.face{
+	display: flex;
+	width: 60px;
+	margin-right: 16px;
+}
+.person .name{
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	left: 0px;
+	top: -16px;
+
+}
+.person .number{
+	font-size: 12px;
+	font-weight: 100;
+}
+.person-info{
+	display: flex;
+	align-items: center;
+	text-align: left;
+	position: relative;
+
+	flex-direction: column;
 	margin-top: 10px;
 }
-.note{
-	margin-top: 16px;
-}
-.aa h5{
-	margin-top: -8px;
-}
 
+
+/*---------------푸터--------------*/
+
+
+
+* {
+  box-sizing: border-box;
+}
 
 footer {
 	width: 100%;
